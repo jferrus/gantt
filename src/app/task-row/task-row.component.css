@@ -1,0 +1,18 @@
+.task {
+  padding: 5px 10px 5px 40px;
+  background-color: #eafdf4;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: block;
+}
+
+ .task .nombre {
+  display: inline-block;
+  min-width: 300px;
+ }
+
+ .task .rectangulo {
+  display: inline-block;
+
+ }
+

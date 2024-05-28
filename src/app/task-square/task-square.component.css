@@ -1,0 +1,19 @@
+.rectangulo {
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(2, 156, 120);
+    min-width: 300px;
+    padding: 5px;
+    align-self: center;
+}
+
+.porcentaje {
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(2, 81, 62);
+    min-width: 100px;
+    min-height: 20px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
