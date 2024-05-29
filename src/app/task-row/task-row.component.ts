@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TaskSquareComponent } from '../task-square/task-square.component';
 
 @Component({
@@ -9,5 +9,9 @@ import { TaskSquareComponent } from '../task-square/task-square.component';
   styleUrl: './task-row.component.css'
 })
 export class TaskRowComponent {
+
+    //Data for the square
+    @Input() timeUnit:number = 1;
+    @Input() timeCompleted:number = 0; 
 
 }
