@@ -1,5 +1,6 @@
 
-
-@for (task of tasks; track $index) {
-    <app-task-row [task]="task"></app-task-row>
-}
+<section class="timeline">
+    @for (task of tasks; track $index) {
+        <app-task-row [task]="task"></app-task-row>
+    }
+</section>

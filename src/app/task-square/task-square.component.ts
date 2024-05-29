@@ -15,7 +15,7 @@ export class TaskSquareComponent {
     timeUnit: 1,
     timeCompleted: 0,
     previousLargestTask: -1,
-    unitsPreviousLargestTaskw: 0
+    unitsPreviousLargestTasks: 0
   };
 
   timeUnit:number = 1;
@@ -39,9 +39,13 @@ export class TaskSquareComponent {
     if(this.rectangulo && this.rectangulo.nativeElement){
       this.rectangulo.nativeElement.style.width = this.unitSizeSquare * this.timeUnit + 'px';
 
+      this.rectangulo.nativeElement.style.marginLeft = this.unitSizeSquare * this.task.unitsPreviousLargestTasks + 'px';
+
       if(this.porcentaje && this.porcentaje.nativeElement){
         this.porcentaje.nativeElement.style.width = this.timeCompleted + '%';
       }
+
+
     }
   }
 }

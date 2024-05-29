@@ -14,27 +14,27 @@ export class TimelineComponent {
       timeUnit: 10,
       timeCompleted: 0,
       previousLargestTask: -1,
-      unitsPreviousLargestTaskw: 0
+      unitsPreviousLargestTasks: 0
 
     },
     {
       timeUnit: 5,
       timeCompleted: 10,
       previousLargestTask: 0,
-      unitsPreviousLargestTasks: 10
+      unitsPreviousLargestTasks: 10 + 1 * 1
 
     },
     {
       timeUnit: 15,
       timeCompleted: 100,
       previousLargestTask: 1,
-      unitsPreviousLargestTasks: 10 + 5 
+      unitsPreviousLargestTasks: 10 + 5  + 2 * 1
     },
     {
       timeUnit: 20,
       timeCompleted: 50,
       previousLargestTask: -1,
-      unitsPreviousLargestTasks: 0
+      unitsPreviousLargestTasks: 10 + 5 + 15 + 3 * 1
 
     }
   ];
