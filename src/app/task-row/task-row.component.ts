@@ -11,7 +11,6 @@ import { TaskSquareComponent } from '../task-square/task-square.component';
 export class TaskRowComponent {
 
     //Data for the square
-    @Input() timeUnit:number = 1;
-    @Input() timeCompleted:number = 0; 
+    @Input() task:any = {};
 
 }

@@ -1,5 +1,5 @@
 
 
 @for (task of tasks; track $index) {
-    <app-task-row [timeCompleted]="task.timeCompleted" [timeUnit]="task.timeUnit"></app-task-row>
+    <app-task-row [task]="task"></app-task-row>
 }

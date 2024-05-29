@@ -10,9 +10,16 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 export class TaskSquareComponent {
   
   unitSizeSquare:number = 20;
-  
-  @Input() timeUnit:number = 1;
-  @Input() timeCompleted:number = 0;
+
+  @Input() task:any =     {
+    timeUnit: 1,
+    timeCompleted: 0,
+    previousLargestTask: -1,
+    unitsPreviousLargestTaskw: 0
+  };
+
+  timeUnit:number = 1;
+  timeCompleted:number = 0;
 
   @ViewChild('rectangulo') rectangulo: ElementRef | undefined;
   @ViewChild('porcentaje') porcentaje: ElementRef | undefined;
@@ -21,6 +28,10 @@ export class TaskSquareComponent {
   constructor() { }
 
   ngAfterViewInit() {
+
+    this.timeUnit = this.task.timeUnit;
+    this.timeCompleted = this.task.timeCompleted;
+
     this.updateSquareSize();
   }
 
